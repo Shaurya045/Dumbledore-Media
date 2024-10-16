@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    scroll-behavior: smooth;
+}
+
+.outline-animation {
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    animation: fillText 3s forwards;
+}
+
+@keyframes fillText {
+    0% {
+    color: transparent;
+      -webkit-text-stroke: 2px white; /* Outline color */
+    }
+    50% {  color: transparent;
+    -webkit-text-stroke: 1px white;
+    }
+    100% {
+      color: white; /* Final fill color */
+      -webkit-text-stroke: 0px; /* Remove outline */
+    }
+  }
