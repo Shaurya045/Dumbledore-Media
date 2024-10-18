@@ -1,11 +1,14 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { img } from "../assets/assets";
 
 function Navbar() {
   return (
     <div className="bg-transparent w-full absolute top-0 left-0 z-[50] flex flex-row items-center justify-between py-[24px] px-[60px] ">
-      <div>
-        <img src="" alt="Logo" />
-      </div>
+      <Link to="/">
+        <div>
+          <img className="w-[50px]" src={img.Logo1} alt="Logo" />
+        </div>
+      </Link>
       <div>
         <ul className="flex flex-row gap-[50px] text-[#A4A4A4] text-[18px] ">
           <li>
