@@ -3,6 +3,8 @@ import dumbledoreStick from "./images/Dumbledore_Stick.png";
 import Logo from "./images/Dumbledore_Logo.png";
 import Logo1 from "./images/Dumbledore_Logo-1.png";
 import sunny from "./images/sunny.jpg";
+import swarn from "./images/swarn.jpg";
+import shaurya from "./images/shaurya_photo.png";
 
 import camera from "./images/camera.png";
 import video from "./images/video.png";
@@ -11,6 +13,8 @@ import threeD from "./images/3d.png";
 import interior_design from "./images/interior_design.png";
 
 export const img = { hogwartsBG, dumbledoreStick, Logo, Logo1, sunny };
+
+export const teamsPhoto = { sunny, swarn, shaurya };
 
 export const homeServices = [
   {
