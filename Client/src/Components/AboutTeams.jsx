@@ -48,7 +48,7 @@ function AboutTeams() {
             </div>
             <img
               className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300"
-              src={teamsPhoto.sunny}
+              src={teamsPhoto.aditya}
               alt="founder"
             />
           </div>
@@ -78,7 +78,7 @@ function AboutTeams() {
             </div>
             <img
               className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300"
-              src={teamsPhoto.sunny}
+              src={teamsPhoto.prakash}
               alt="founder"
             />
           </div>
@@ -110,7 +110,7 @@ function AboutTeams() {
             </div>
             <img
               className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300"
-              src={teamsPhoto.sunny}
+              src={teamsPhoto.sandeep}
               alt="founder"
             />
           </div>
