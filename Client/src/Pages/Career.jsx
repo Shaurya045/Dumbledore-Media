@@ -1,6 +1,6 @@
-import CareerAbout from "../Components/careerAbout"
-import Careercareers from "../Components/Careercareers"
-import CareerContact from "../Components/CareerContact"
+import CareerAbout from "@/Components/CareerAbout"
+import Careercareers from "@/Components/Careercareers"
+import CareerContact from "@/Components/CareerContact"
 import { Outlet } from "react-router-dom"
 
 function Career() {
