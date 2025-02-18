@@ -1,135 +1,66 @@
-import React from "react";
 import { teamsPhoto } from "../assets/assets";
 
-function AboutTeams() {
+function TeamMember({ name, title, image }) {
   return (
-    <div className="flex flex-col items-center gap-[40px] pt-[100px] px-[100px]">
-      <h1 className="text-white text-[40px] font-bold ">Our Wizards</h1>
-      <div className="flex flex-col gap-[20px] items-center ">
-        <div className="w-[270px] h-[320px] bg-white relative ">
-          <div className="absolute bottom-0 w-full h-[70px] bg-[#000000b0] flex flex-col justify-center z-10 ">
-            <h3 className="text-white text-[15px] font-semibold px-[20px]">
-              Sunny Singh
-            </h3>
-            <h3 className="text-white text-[13px] font-light px-[20px]">
-              Headmaster & CEO
-            </h3>
-          </div>
-          <img
-            className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300 "
-            src={teamsPhoto.sunny}
-            alt="founder"
-          />
-        </div>
-        <div className="flex flex-row gap-[20px]">
-          <div className="w-[270px] h-[320px] bg-white relative ">
-            <div className="absolute bottom-0 w-full h-[70px] bg-[#000000b0] flex flex-col justify-center z-10 ">
-              <h3 className="text-white text-[15px] font-semibold px-[20px]">
-                Shaurya Pratap Singh
-              </h3>
-              <h3 className="text-white text-[13px] font-light px-[20px]">
-                Web Wizard
-              </h3>
-            </div>
-            <img
-              className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300 "
-              src={teamsPhoto.shaurya}
-              alt="founder"
-            />
-          </div>
-          <div className="w-[270px] h-[320px] bg-white relative ">
-            <div className="absolute bottom-0 w-full h-[70px] bg-[#000000b0] flex flex-col justify-center z-10 ">
-              <h3 className="text-white text-[15px] font-semibold px-[20px]">
-                Aditya Singh
-              </h3>
-              <h3 className="text-white text-[13px] font-light px-[20px]">
-                Interior Design Sorcerer
-              </h3>
-            </div>
-            <img
-              className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300"
-              src={teamsPhoto.aditya}
-              alt="founder"
-            />
-          </div>
-          <div className="w-[270px] h-[320px] bg-white relative ">
-            <div className="absolute bottom-0 w-full h-[70px] bg-[#000000b0] flex flex-col justify-center z-10 ">
-              <h3 className="text-white text-[15px] font-semibold px-[20px]">
-                Swapnil
-              </h3>
-              <h3 className="text-white text-[13px] font-light px-[20px]">
-                3D Motion Graphics Artisan
-              </h3>
-            </div>
-            <img
-              className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300"
-              src={teamsPhoto.sunny}
-              alt="founder"
-            />
-          </div>
-          <div className="w-[270px] h-[320px] bg-white relative ">
-            <div className="absolute bottom-0 w-full h-[70px] bg-[#000000b0] flex flex-col justify-center z-10 ">
-              <h3 className="text-white text-[15px] font-semibold px-[20px]">
-                Prakash
-              </h3>
-              <h3 className="text-white text-[13px] font-light px-[20px]">
-                Creative Conjurer
-              </h3>
-            </div>
-            <img
-              className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300"
-              src={teamsPhoto.prakash}
-              alt="founder"
-            />
-          </div>
-        </div>
-        <div className="flex flex-row gap-[20px]">
-          <div className="w-[270px] h-[320px] bg-white relative ">
-            <div className="absolute bottom-0 w-full h-[70px] bg-[#000000b0] flex flex-col justify-center z-10 ">
-              <h3 className="text-white text-[15px] font-semibold px-[20px]">
-                Rishi
-              </h3>
-              <h3 className="text-white text-[13px] font-light px-[20px]">
-                Marketing Sorcerer
-              </h3>
-            </div>
-            <img
-              className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300"
-              src={teamsPhoto.sunny}
-              alt="founder"
-            />
-          </div>
-          <div className="w-[270px] h-[320px] bg-white relative ">
-            <div className="absolute bottom-0 w-full h-[70px] bg-[#000000b0] flex flex-col justify-center z-10 ">
-              <h3 className="text-white text-[15px] font-semibold px-[20px]">
-                Sandeep Singh
-              </h3>
-              <h3 className="text-white text-[13px] font-light px-[20px]">
-                Visual Effects Enchanter
-              </h3>
-            </div>
-            <img
-              className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300"
-              src={teamsPhoto.sandeep}
-              alt="founder"
-            />
-          </div>
-          <div className="w-[270px] h-[320px] bg-white relative ">
-            <div className="absolute bottom-0 w-full h-[70px] bg-[#000000b0] flex flex-col justify-center z-10 ">
-              <h3 className="text-white text-[15px] font-semibold px-[20px]">
-                Swarn pratap Singh
-              </h3>
-              <h3 className="text-white text-[13px] font-light px-[20px]">
-                UI/UX Alchemist
-              </h3>
-            </div>
-            <img
-              className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300"
-              src={teamsPhoto.swarn}
-              alt="founder"
-            />
-          </div>
-        </div>
+    <div className="w-full sm:w-[270px] h-[320px] bg-white relative">
+      <div className="absolute bottom-0 w-full h-[70px] bg-[#000000b0] flex flex-col justify-center z-10">
+        <h3 className="text-white text-sm sm:text-[15px] font-semibold px-4 sm:px-[20px]">
+          {name}
+        </h3>
+        <h3 className="text-white text-xs sm:text-[13px] font-light px-4 sm:px-[20px]">
+          {title}
+        </h3>
+      </div>
+      <img
+        className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-300"
+        src={image || "/placeholder.svg"}
+        alt={`${name} - ${title}`}
+      />
+    </div>
+  );
+}
+
+function AboutTeams() {
+  const teamMembers = [
+    { name: "Sunny Singh", title: "Headmaster & CEO", image: teamsPhoto.sunny },
+    {
+      name: "Shaurya Pratap Singh",
+      title: "Web Wizard",
+      image: teamsPhoto.shaurya,
+    },
+    {
+      name: "Aditya Singh",
+      title: "Interior Design Sorcerer",
+      image: teamsPhoto.aditya,
+    },
+    {
+      name: "Swapnil",
+      title: "3D Motion Graphics Artisan",
+      image: teamsPhoto.sunny,
+    },
+    { name: "Prakash", title: "Creative Conjurer", image: teamsPhoto.prakash },
+    { name: "Rishi", title: "Marketing Sorcerer", image: teamsPhoto.sunny },
+    {
+      name: "Sandeep Singh",
+      title: "Visual Effects Enchanter",
+      image: teamsPhoto.sandeep,
+    },
+    {
+      name: "Swarn pratap Singh",
+      title: "UI/UX Alchemist",
+      image: teamsPhoto.swarn,
+    },
+  ];
+
+  return (
+    <div className="flex flex-col items-center gap-8 sm:gap-12 py-12 sm:py-16 md:py-24 px-4 sm:px-8 md:px-12 lg:px-16">
+      <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold text-center">
+        Our Wizards
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
+        {teamMembers.map((member, index) => (
+          <TeamMember key={index} {...member} />
+        ))}
       </div>
     </div>
   );

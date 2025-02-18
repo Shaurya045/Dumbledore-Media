@@ -8,58 +8,33 @@ import HomeProjectPhoto from "./HomeProjectPhoto";
 
 function HomeProject() {
   const [showProject, setShowProject] = useState(1);
+  const tabs = [
+    { id: 1, label: "Photography" },
+    { id: 2, label: "Videography" },
+    { id: 3, label: "Web/App Dev" },
+    { id: 4, label: "3D" },
+    { id: 5, label: "Interior Design" },
+  ];
   return (
-    <div className="bg-black pt-[20px] flex flex-col">
+    <div className="bg-black pt-5 flex flex-col">
       <h1 className="text-white px-[40px] text-[40px] font-bold ">Projects</h1>
-      <div className="grid grid-cols-[repeat(6,1fr)] my-[20px] px-[40px] gap-[10px]">
-        <div
-          onClick={() => setShowProject(1)}
-          className={`${
-            showProject === 1 ? "bg-white text-black" : ""
-          } border-[#2e2e2e] border-[1px] rounded-[10px] hover:bg-white text-white hover:text-black text-[18px] font-semibold text-center py-[15px] cursor-pointer `}
-        >
-          Photography
-        </div>
-        <div
-          onClick={() => setShowProject(2)}
-          className={`${
-            showProject === 2 ? "bg-white text-black" : ""
-          } border-[#2e2e2e] border-[1px] rounded-[10px] hover:bg-white text-white hover:text-black text-[18px] font-semibold text-center py-[15px] cursor-pointer `}
-        >
-          Videography
-        </div>
-        <div
-          onClick={() => setShowProject(3)}
-          className={`${
-            showProject === 3 ? "bg-white text-black " : ""
-          } border-[#2e2e2e] border-[1px] rounded-[10px] hover:bg-white text-white hover:text-black text-[18px] font-semibold text-center py-[15px] cursor-pointer `}
-        >
-          Web/App Dev
-        </div>
-        <div
-          onClick={() => setShowProject(4)}
-          className={`${
-            showProject === 4 ? "bg-white text-black" : ""
-          } border-[#2e2e2e] border-[1px] rounded-[10px] hover:bg-white text-white hover:text-black text-[18px] font-semibold text-center py-[15px] cursor-pointer `}
-        >
-          3D
-        </div>
-        <div
-          onClick={() => setShowProject(5)}
-          className={`${
-            showProject === 5 ? "bg-white text-black" : ""
-          } border-[#2e2e2e] border-[1px] rounded-[10px] hover:bg-white text-white hover:text-black text-[18px] font-semibold text-center py-[15px] cursor-pointer `}
-        >
-          Interior Design
-        </div>
-        {/* <div
-          onClick={() => setShowProject(3)}
-          className={`${
-            showProject === 3 ? "bg-white text-[#000000]" : ""
-          } border-[#2e2e2e] border-[1px] rounded-[10px] hover:bg-white text-white hover:text-black text-[18px] font-semibold text-center py-[15px] cursor-pointer `}
-        >
-          VFX
-        </div> */}
+      <div className="px-[40px] flex flex-wrap justify-start my-5 gap-2 sm:gap-3 md:gap-4">
+        {tabs.map((tab) => (
+          <button
+            key={tab.id}
+            onClick={() => setShowProject(tab.id)}
+            className={`
+              ${showProject === tab.id ? "bg-white text-black" : "text-white"}
+              border border-[#2e2e2e] rounded-lg
+              hover:bg-white hover:text-black
+              text-sm sm:text-base md:text-lg font-semibold
+              py-2 px-3 sm:py-3 sm:px-4 md:py-4 md:px-5
+              cursor-pointer transition-colors duration-200
+            `}
+          >
+            {tab.label}
+          </button>
+        ))}
       </div>
       {showProject == 1 && <HomeProjectPhoto />}
       {showProject == 2 && <HomeProjectVideo />}

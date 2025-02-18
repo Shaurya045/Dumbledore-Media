@@ -21,6 +21,16 @@ import web from "./images/web.png";
 import threeD from "./images/3d.png";
 import interior_design from "./images/interior_design.png";
 
+import discover from "./images/discover.png";
+import strategize from "./images/strategize.png";
+import execute from "./images/execute.png";
+import evolve from "./images/evolve.png";
+import launch from "./images/launch.png";
+
+import madhavori from "./images/madhavori.png";
+import ornate from "./images/ornate.png";
+import dumbledoremedia from "./images/dumbledoremedia.png";
+
 export const img = { hogwartsBG, dumbledoreStick, Logo, Logo1, sunny };
 
 export const teamsPhoto = { sunny, swarn, shaurya, sandeep, aditya, prakash };
@@ -49,3 +59,7 @@ export const homeServices = [
     image: interior_design,
   },
 ];
+
+export const servicesScroll = { discover, strategize, execute, evolve, launch };
+
+export const projectWeb = { madhavori, ornate, dumbledoremedia };
