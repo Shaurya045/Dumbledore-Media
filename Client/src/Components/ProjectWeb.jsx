@@ -1,5 +1,5 @@
-import { PinContainer } from "@/Components/ui/3d-pin";
-import { projectWeb } from "@/assets/assets";
+import { PinContainer } from "../Components/ui/3d-pin";
+import { projectWeb } from "../assets/assets";
 
 function ProjectWeb() {
   return (

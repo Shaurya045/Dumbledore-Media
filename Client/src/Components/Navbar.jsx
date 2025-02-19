@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { img } from "@/assets/assets";
+import { img } from "../assets/assets";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

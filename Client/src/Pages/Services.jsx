@@ -1,7 +1,7 @@
-import ServiceHeader from "@/Components/ServiceHeader";
-import ServicesPackages from "@/Components/ServicesPackages";
-import ServicesScroll from "@/Components/ServicesScroll";
-import ServicesSection from "@/Components/ServicesSection";
+import ServiceHeader from "../Components/ServiceHeader";
+import ServicesPackages from "../Components/ServicesPackages";
+import ServicesScroll from "../Components/ServicesScroll";
+import ServicesSection from "../Components/ServicesSection";
 
 function Services() {
   return (

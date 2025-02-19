@@ -1,4 +1,4 @@
-import ProjectTabs from "@/Components/ProjectTabs";
+import ProjectTabs from "../Components/ProjectTabs";
 import ProjectHeader from "../Components/ProjectHeader";
 
 function Projects() {

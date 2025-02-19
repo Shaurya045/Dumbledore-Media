@@ -1,5 +1,5 @@
 import React from "react";
-import { FocusCards } from "@/Components/ui/focus-cards";
+import { FocusCards } from "../Components/ui/focus-cards";
 
 const cards = [
   {
